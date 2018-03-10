@@ -64,7 +64,7 @@
 
 \cventry{2016--2019}{硕士}{南京大学计算机科学与技术系}{}{\textit{系统安全方向}}{}
 
-\cventry{2012--2016}{本科}{Transferred}{}{\textit{Mechanical Engineering}}{}
+\cventry{2012--2016}{本科}{常熟理工学院计算机科学与工程系}{}{}{}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -83,8 +83,9 @@
 \section{项目经历}
 
 
-\cventry{Aug 2015 --
-Dec 2015}{CNC Pancake Printing Machine}{\textsc{Mechatronics Design}}{}{}{Wrote LabVIEW code to aquire images of people's faces from a USB camera and perform image processing.  Used MATLAB to convert the processed image to g-code. An Arduino Uno was acting as a CNC controller.  Pancake batter was printed on an electric griddle and color shading was achieved by varying the cooking time.}
+\cventry{2017/04 --}{可被形式化验证的安全操作系统VTOS}{{git: https://github.com/chenup/CTOS}}{}{}{该项目基于开源项目optee os, 构建了一个基于ARM TrustZone设备的VTOS, VTOS是一个可被验证的可信微内核系统. 由于optee os只是一个可信执行环境, 只有简单的内存管理模块和TA模块, 所以我们对它进行了全面的改进和完善. 我参与了大部分模块的构建, 如进程管理模块,安全时钟中断模块,同步模块,消息模块,时间子系统和信号模块等, 对内核的构建有了系统的认识.}
+\cventry{2017/02 --2017/12}{基于可信执行环境的安全移动终端与智能家居网络控制系统}{}{}{}{整个系统分为四个子系统:基于可信执行环境的智能家居网络安全接入子系统,智能家居网络控制管理子系统,智能家居网络公共服务平台,智能家居网络联动子系统,我参与了前期网络通信的搭建和后期系统的测试,负责构建安全域的签名系统,利用安全域进行签名操作可以有效保护签名私钥,显著降低私钥被恶意程序窃取的安全风险.对我来说这是一次在大型项目中与别人互相合作的经验.}
+\cventry{2016/12 --2017/05}{保护移动终端安全性的T-MAC系统}{}{}{}{由于恶意代码和强制访问控制系统运行在同样的特权级和内存地址空间(内核),使得MAC系统的完整性容易遭到破坏.利用ARM Trustzone构建一个可信的MAC隔离框架T-MAC.它主要由MAC supplicant client和back-end MAC service组成,前者运行在手机系统内核当中,后者受到安全域的保护,这种架构保证了service制定的策略的可信性,并且client可以有效的查找到这些策略,由此来保障手机系统操作的安全性.我参与了T-MAC的设计,负责back-end MAC service的实现,基于开源的optee os构建安全服务器,最后用此项目在ISC会议发表了一篇文章.}
 
 %----------------------------------------------------------------------------------------
 %	PAPER SECTION
@@ -93,8 +94,8 @@ Dec 2015}{CNC Pancake Printing Machine}{\textsc{Mechatronics Design}}{}{}{Wrote 
 \section{论文}
 
 
-\cventry{Aug 2015 --
-Dec 2015}{CNC Pancake Printing Machine}{\textsc{Mechatronics Design}}{}{}{Wrote LabVIEW code to aquire images of people's faces from a USB camera and perform image processing.  Used MATLAB to convert the processed image to g-code. An Arduino Uno was acting as a CNC controller.  Pancake batter was printed on an electric griddle and color shading was achieved by varying the cooking time.}
+\cventry{2017}{T-MAC: Protecting Mandatory Access Control System Integrity from Malicious Execution Environment on ARM-based Mobile Devices}{\textsc{ISC}}{}{}{}
+\cventry{2017}{High Performance and Scalable Virtual Machine Storage I/O Stack for Multicore Systems}{\textsc{ICPADS}}{}{}{}
 
 
 %----------------------------------------------------------------------------------------
@@ -109,8 +110,9 @@ Dec 2015}{CNC Pancake Printing Machine}{\textsc{Mechatronics Design}}{}{}{Wrote 
 %----------------------------------------------------------------------------------------
 \section{技能}
 
-\cvitem{编程语言}{\textsc{C > C++ > JAVA}}
-\cvitem{英语}{\textsc{CET-6, 较为流利的英语读写能力和口语}}
+\cvitem{编程语言}{{熟悉C / C++, 了解JAVA和Python}}
+\cvitem{其它}{{熟悉Linux和Minix内核, 熟悉ARM架构}}
+\cvitem{英语}{{CET-6, 较为流利的英语读写能力和口语}}
 
 \end{document}
 
